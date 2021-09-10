@@ -45,7 +45,7 @@ const getOrderById = asyncHandler(async (req, res) => {
 
     if (requestedOrder.user) {
       const orderOwner = requestedOrder.user.toString();
-      if (orderOwner !== req.user.id && !req.user.isAdmin)
+      if (orderOwner !== req.user.id || !req.user.isAdmin)
         res.status(403).json({
           message: "You are permitted to see the details of the given order",
         });
