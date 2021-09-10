@@ -3,6 +3,6 @@
 /frontend/build
 /frontend/.vscode
 /frontend/.gitignore
-/backend/config
+/backend/config/seedDBData.js
 /backend/data
 .env
