@@ -5,3 +5,4 @@
 /frontend/.gitignore
 /backend/config
 /backend/data
+.env
