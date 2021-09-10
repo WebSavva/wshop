@@ -1,0 +1,5 @@
+@for $i from 7 through 15 {
+  .fs-#{$i} {
+    font-size: #{23 - $i}px !important;
+  }
+}

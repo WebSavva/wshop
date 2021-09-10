@@ -1,0 +1,80 @@
+.shaking {
+  animation: bounce 0.7s both infinite;
+  backface-visibility: hidden;
+}
+
+.fading-in {
+  animation: fadeIn 0.8s;
+  backface-visibility: hidden;
+}
+
+.product-card-img {
+  max-height: 120px !important;
+  height: auto !important;
+  max-width: 100% !important;
+  width: auto !important;
+}
+
+.cart-item-img {
+  max-width: 40px !important;
+  height: auto !important;
+  @media only screen and (max-width: 600px) {
+    max-width: 35px !important;
+  }
+}
+
+.user-img {
+  max-width: 50px !important;
+  height: auto !important;
+}
+
+.top-product-carousel {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+}
+
+.carousel-shadow {
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.top-product-img {
+  height: 200px;
+  @media only screen and (max-width: 500px) {
+    height: 100px;
+  }
+}
+
+.display-5 {
+  @media only screen and (max-width: 600px) {
+    font-size: 18px !important;
+  }
+}
+.order-item-img {
+  max-height: 50px !important;
+  height: auto !important;
+}
+
+.product-card-title {
+  font-size: 15px !important;
+}
+
+.product-card-reviews {
+  font-size: 13px;
+}
+
+.product-card-price {
+  font-size: 18px !important;
+}
+
+.product-page-img {
+  max-height: 350px !important;
+  margin: auto;
+  display: block;
+  @media only screen and (max-width: 600px) {
+    max-height: 200px !important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

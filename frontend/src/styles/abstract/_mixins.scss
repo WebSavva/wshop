@@ -1,0 +1,14 @@
+@use "sass:map";
+
+@mixin centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mediaResponse($device) {
+  $breakpointValue: map-get($grid-breakpoints, $device);
+  @media screen and (max-width: #{$breakpointValue}) {
+    @content;
+  }
+}

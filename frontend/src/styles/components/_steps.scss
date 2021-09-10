@@ -1,0 +1,78 @@
+$darkened-success-color: darken($success-color, 15%);
+
+.steps {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  @media only screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
+  &__stage-box {
+    position: relative;
+  }
+  &__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    transition: background-color 0.5s ease-out;
+    @media only screen and (max-width: 600px) {
+      width: 15px;
+      height: 15px;
+    }
+    &.active {
+      background-color: $success-color;
+      transition: background-color 0.5s 0.5s ease-out;
+      animation: augment 0.2s 0.5s;
+    }
+  }
+
+  &__header {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    font-size: 15px;
+    transform: translateX(-50%);
+    width: max-content;
+    text-transform: capitalize;
+    color: $secondary-color;
+    transition: color 0.5s ease-out;
+    &.active {
+      color: $darkened-success-color;
+      transition: color 0.5s 0.5s ease-out;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 12px;
+    }
+
+    @media only screen and (max-width: 320px) {
+      font-size: 10px;
+    }
+  }
+
+  &__line {
+    height: 3px;
+    background-color: $secondary-color;
+    flex-grow: 1;
+    align-self: center;
+    position: relative;
+    &::before {
+      content: "";
+      width: 0;
+      background-color: inherit;
+      background-color: $darkened-success-color;
+      z-index: 10;
+      height: 100%;
+      position: absolute;
+      transition: width 0.5s 0.1s;
+      top: 0;
+      left: 0;
+    }
+    &.active {
+      &::before {
+        width: 100%;
+        transition: width 0.5s;
+      }
+    }
+  }
+}
