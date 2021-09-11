@@ -95,7 +95,7 @@ function AdminTableTemplate<
     return <Spinner size={150} />;
   } else if (tableData) {
     return (
-      <Container>
+      <Container className='fading-in'>
         {isUserDeleting && <ScreenLoader />}
         <div className="d-flex justify-content-between mb-4">
           <h4 className="text-uppercase">{dataName}s</h4>

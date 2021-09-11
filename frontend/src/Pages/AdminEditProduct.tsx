@@ -22,7 +22,7 @@ const AdminEditProductPage = () => {
   return (
     <>
       <Head title="Admin | Edit Product" favicon={adminFavIcon} />
-      <Container>
+      <Container className='fading-in'>
         <Row className="justify-content-center">
           <Col sm={8}>
             <AdminEditTemplate

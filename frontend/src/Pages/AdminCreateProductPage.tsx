@@ -70,7 +70,7 @@ const AdminCreateProductPage = () => {
   return (
     <>
       <Head title="Admin | Create Product" favicon={admiFavIcon} />
-      <Container>
+      <Container className='fading-in'>
         {isLoadingNewProduct && <ScreenLoader />}
         <Row>
           <Col sm={8}>

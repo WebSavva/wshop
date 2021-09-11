@@ -125,12 +125,12 @@ const OrderPage = () => {
 
     const paidNotification = {
       isError: !isOrderPaid,
-      text: `Your order has ${!isOrderPaid ? "not" : ""} been paid`,
+      text: `The order has ${!isOrderPaid ? "not" : ""} been paid`,
     };
 
     const deliveryNotification = {
       isError: !isOrderDelivered,
-      text: `Your order has ${!isOrderDelivered ? "not" : ""} been delivered`,
+      text: `The order has ${!isOrderDelivered ? "not" : ""} been delivered`,
     };
 
     let cardFooterContent: JSX.Element | null;

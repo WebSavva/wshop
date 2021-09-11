@@ -52,7 +52,7 @@ const AdminCreateUserPage = () => {
   return (
     <>
       <Head title="Admin | Create User" favicon={adminFavIcon} />
-      <Container>
+      <Container className='fading-in'>
         <Row className="justify-content-center">
           {isFetching && <ScreenLoader />}
           <Col sm={6}>

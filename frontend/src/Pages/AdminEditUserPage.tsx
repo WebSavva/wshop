@@ -8,7 +8,7 @@ const AdminEditUserPage = () => {
   return (
     <>
       <Head title="Admin | Edit User" favicon={adminFavIcon} />
-      <Container>
+      <Container className='fading-in'>
         <Row className="justify-content-center">
           <Col sm={6}>
             <AdminEditTemplate

@@ -71,7 +71,7 @@ const UserProfilePage: React.FC = () => {
   return (
     <>
       <Head title={`W-SHOP | ${authUserInfo?.name}`} />
-      <Container>
+      <Container className='fading-in'>
         <Row>
           <Col md={4} className="mb-4">
             <h4 className="text-uppercase">My profile</h4>

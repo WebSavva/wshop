@@ -72,7 +72,7 @@ const CartItem: React.FC<IShortenedProduct> = (props) => {
           <Button
             onClick={removeProductFromCart}
             variant="outline-danger"
-            className="d-flex justify-content-center py-sm-2 py-1 px-1 px-sm-3"
+            className="d-flex justify-content-center py-sm-2 py-1 px-1 ms-2 px-sm-3"
           >
             <FontAwesomeIcon icon={faTrash} className="fs-10" />
           </Button>
